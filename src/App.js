@@ -4,7 +4,6 @@ import './App.css';
 function App() {
   const [quote, setQuote] = useState('');
   const [author, setAuthor] = useState('');
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -45,7 +44,7 @@ function App() {
       </div>
 
       <div className='center_qoute'>
-      <h2>{quote}</h2>
+      <h2><bold>{quote}</bold></h2>
       <h4>{author}</h4>
       </div>
 
@@ -53,7 +52,6 @@ function App() {
         <button onClick={() => window.location.reload(false)}>New quote, pretty please.</button>
       </div>
     </div>
-
   );
 }
 

@@ -1,5 +1,7 @@
 body {
-  background: linear-gradient(#f7f0a3, #f8f5d7);
+  /* background: linear-gradient(#fff050, #222121); */
+  background-color: rgb(26, 25, 25);
+  color: #d6d1d1;
 }
 
 .hamburger-menu {
@@ -15,7 +17,7 @@ body {
 }
 
 .hamburger-menu div {
-  background-color: black;
+  background-color: #d6d1d1;
   height: 3px;
   width: 100%;
 }
@@ -27,7 +29,7 @@ body {
   line-height: 30px;
   top: 60px;
   right: 20px;
-  background-color: #f7f0a3;
+  background-color: rgb(26, 25, 25);
   border: 3px solid black;
   padding: 10px;
 }
@@ -61,7 +63,7 @@ body {
   align-items: center;
 }
 
-.bottom button {
+button {
   background: none;
   color: inherit;
   border: none;
