@@ -1,25 +1,61 @@
+body {
+  background: linear-gradient(#f7f0a3, #f8f5d7);
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 25px;
+  width: 35px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.hamburger-menu div {
+  background-color: black;
+  height: 3px;
+  width: 100%;
+}
+
+.menu-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  top: 60px;
+  right: 20px;
+  background-color: #f7f0a3;
+  border: 3px solid black;
+  padding: 10px;
+}
+
+
 .top {
   display: flex;
-  background-color: blue;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+  padding-top: 3px  ;
+  padding-left: 20px;
 }
+
 
 .center_qoute {
   height: 80vh;
+  line-height: 1px;
   flex-direction: column;
   display: flex;
-  background-color: red;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
 .bottom {
-  height: 12vh;
+  height: 12.6vh;
   display: flex;
-  background-color: green;
   text-align: center;
   justify-content: center;
   align-items: center;
