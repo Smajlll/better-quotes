@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import { Route, Routes, Link } from 'react-router-dom'; // Import Route, Routes, and Link
+import About from './About';
 
 function App() {
+  
   const [quote, setQuote] = useState('');
   const [author, setAuthor] = useState('');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,8 +39,8 @@ function App() {
       <div className={`menu ${isMenuOpen ? "open" : "closed"}`}>
       {isMenuOpen && (
         <div className="menu-content">
-        <a href="/">Home page</a>
-        <a href="/about">About this site</a>
+         <Link to="/">Home page</Link>
+         <Link to="/about">About this site</Link>
     </div>
   )}
   </div>
@@ -55,4 +58,12 @@ function App() {
   );
 }
 
-export default App;
+export default function plsJustRouteThis() {
+  return (
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/about" element={<About />} />
+    </Routes>
+  );
+}
+

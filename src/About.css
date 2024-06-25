@@ -1,0 +1,78 @@
+body {
+  /* background: linear-gradient(#fff050, #222121); */
+  background-color: rgb(26, 25, 25);
+  color: #d6d1d1;
+}
+
+a {
+  color: white;
+}
+a:hover {
+   color: #4c85ac
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 25px;
+  width: 35px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.hamburger-menu div {
+  background-color: #d6d1d1;
+  height: 3px;
+  width: 100%;
+}
+
+.menu-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  top: 60px;
+  right: 20px;
+  padding: 10px;
+}
+
+.top {
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+  padding-top: 3px  ;
+  padding-left: 20px;
+}
+
+
+.center_qoute {
+  height: 80vh;
+  line-height: 1px;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom {
+  height: 12.6vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
